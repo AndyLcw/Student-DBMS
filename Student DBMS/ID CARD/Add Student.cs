@@ -37,22 +37,18 @@ namespace ID_CARD
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
-            SqlConnection conn = new SqlConnection("Data Source=.\\SQLEXPRESS;AttachDbFilename="+fullPath_class.fullPath+";Integrated Security=True;Connect Timeout=30;User Instance=True");
-            conn.Open();
-
-
-
-
-
-
+        
+            String connectionString="server=lcw;database=StudentMannergerDB;integrated security=SSPI";
+            SqlConnection conn;
+            conn = new SqlConnection(connectionString);
+           // conn.ConnectionString = "Data Source=(local);Initial Catalog=StudentMannergerDB;User ID=sa;Password=1605010201;";
 
             sql = "insert into student VALUES('" + this.textBox1.Text + "', '" + this.textBox2.Text + "', '" + this.textBox3.Text + "', '" + this.textBox7.Text + "', '" + this.textBox8.Text + "', '" + this.textBox9.Text + "', '" + this.textBox4.Text + "', '" + this.textBox5.Text + "', '" + this.textBox6.Text + "', '" + this.textBox11.Text + "', '" + this.textBox10.Text+"', '', '')";
-            SqlCommand cmd = new SqlCommand(sql, conn);
-
-            int ct = cmd.ExecuteNonQuery();
-            MessageBox.Show("Record Added");
+            SqlCommand command = new SqlCommand(sql, conn);
+            conn.Open();
+            int ct = command.ExecuteNonQuery();
             conn.Close();
+            MessageBox.Show("Record Added");
 
         }
 
@@ -66,7 +62,19 @@ namespace ID_CARD
 
         }
 
+        private void label9_Click(object sender, EventArgs e)
+        {
 
-        
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox11_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

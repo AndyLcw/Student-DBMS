@@ -21,15 +21,10 @@ namespace ID_CARD
 
         private void button1_Click(object sender, EventArgs e)
         {
-
-
-
-
-
-
-
-
-            SqlConnection conn = new SqlConnection("Data Source=.\\SQLEXPRESS;AttachDbFilename=" + fullPath_class.fullPath + ";Integrated Security=True;Connect Timeout=30;User Instance=True");
+            String connectionString = "server=lcw;database=StudentMannergerDB;integrated security=SSPI";
+            SqlConnection conn;
+            conn = new SqlConnection(connectionString);
+         //   SqlConnection conn = new SqlConnection("Data Source=(local);AttachDbFilename=" + fullPath_class.fullPath + ";Integrated Security=True;Connect Timeout=30;User Instance=True");
             conn.Open();
 
             sql = "delete student where name='" + this.textBox1.Text + "' and father_name ='" + this.textBox2.Text + "'";
@@ -46,6 +41,16 @@ namespace ID_CARD
         }
 
         private void remove_db_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }

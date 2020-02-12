@@ -47,3 +47,19 @@ C:\Users\Vivek Kumar\Documents\Visual Studio 2010\Projects\ID CARD\ID CARD\obj\x
 C:\Users\Vivek Kumar\Documents\Visual Studio 2010\Projects\ID CARD\ID CARD\obj\x86\Debug\ID_CARD.update.resources
 C:\Users\Vivek Kumar\Documents\Visual Studio 2010\Projects\ID CARD\ID CARD\obj\x86\Debug\ID_CARD.Welcome.resources
 C:\Users\Vivek Kumar\Documents\Visual Studio 2010\Projects\ID CARD\ID CARD\obj\x86\Debug\ID CARD.csproj.GenerateResource.Cache
+D:\Code\C#\Student-DBMS\Student DBMS\ID CARD\bin\Debug\ID CARD.exe
+D:\Code\C#\Student-DBMS\Student DBMS\ID CARD\bin\Debug\ID CARD.pdb
+D:\Code\C#\Student-DBMS\Student DBMS\ID CARD\obj\x86\Debug\ID CARD.csprojAssemblyReference.cache
+D:\Code\C#\Student-DBMS\Student DBMS\ID CARD\obj\x86\Debug\ID_CARD.add_db.resources
+D:\Code\C#\Student-DBMS\Student DBMS\ID CARD\obj\x86\Debug\ID_CARD.leave_school.resources
+D:\Code\C#\Student-DBMS\Student DBMS\ID CARD\obj\x86\Debug\ID_CARD.main_menu.resources
+D:\Code\C#\Student-DBMS\Student DBMS\ID CARD\obj\x86\Debug\ID_CARD.Properties.Resources.resources
+D:\Code\C#\Student-DBMS\Student DBMS\ID CARD\obj\x86\Debug\ID_CARD.remove_db.resources
+D:\Code\C#\Student-DBMS\Student DBMS\ID CARD\obj\x86\Debug\ID_CARD.review_DB.resources
+D:\Code\C#\Student-DBMS\Student DBMS\ID CARD\obj\x86\Debug\ID_CARD.update.resources
+D:\Code\C#\Student-DBMS\Student DBMS\ID CARD\obj\x86\Debug\ID_CARD.Welcome.resources
+D:\Code\C#\Student-DBMS\Student DBMS\ID CARD\obj\x86\Debug\ID CARD.csproj.GenerateResource.cache
+D:\Code\C#\Student-DBMS\Student DBMS\ID CARD\obj\x86\Debug\ID CARD.csproj.CoreCompileInputs.cache
+D:\Code\C#\Student-DBMS\Student DBMS\ID CARD\obj\x86\Debug\ID CARD.csproj.CopyComplete
+D:\Code\C#\Student-DBMS\Student DBMS\ID CARD\obj\x86\Debug\ID CARD.exe
+D:\Code\C#\Student-DBMS\Student DBMS\ID CARD\obj\x86\Debug\ID CARD.pdb

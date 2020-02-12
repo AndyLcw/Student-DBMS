@@ -20,15 +20,16 @@ namespace ID_CARD
 
         private void button1_Click(object sender, EventArgs e)
         {
-
-            SqlConnection conn = new SqlConnection("Data Source=.\\SQLEXPRESS;AttachDbFilename=" + fullPath_class.fullPath + ";Integrated Security=True;Connect Timeout=30;User Instance=True");
+            String connectionString="server=lcw;database=StudentMannergerDB;integrated security=SSPI";
+            SqlConnection conn = new SqlConnection(connectionString);
+           // SqlConnection conn = new SqlConnection("Data Source=.;AttachDbFilename=" + fullPath_class.fullPath + ";Integrated Security=True;Connect Timeout=30;User Instance=True");
+           
             conn.Open();
            
             string y;
             sql = "update student set school_leaving_date ='" + this.textBox3.Text + "' where name='" + this.textBox1.Text + "' and father_name='" + this.textBox2.Text + "'";
 
             SqlCommand cmd = new SqlCommand(sql, conn);
-
 
             int ct = cmd.ExecuteNonQuery();
             if (ct == 0)
@@ -38,11 +39,8 @@ namespace ID_CARD
             sql = "update student set current_status = 'Left School' where school_leaving_date IS NOT NULL";
             cmd = new SqlCommand(sql, conn);
 
-
             ct = cmd.ExecuteNonQuery();
-            
-              
-
+ 
             conn.Close();
         }
 
@@ -52,6 +50,11 @@ namespace ID_CARD
         }
 
         private void leave_school_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
         {
 
         }

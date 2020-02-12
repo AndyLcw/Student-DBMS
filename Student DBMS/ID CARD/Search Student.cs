@@ -24,7 +24,9 @@ namespace ID_CARD
         {
             SqlCommand cmd;
             SqlDataReader dr;
-            SqlConnection conn = new SqlConnection("Data Source=.\\SQLEXPRESS;AttachDbFilename=" + fullPath_class.fullPath + ";Integrated Security=True;Connect Timeout=30;User Instance=True");
+        //    SqlConnection conn = new SqlConnection("Data Source=(local);AttachDbFilename=" + fullPath_class.fullPath + ";Integrated Security=True;Connect Timeout=30;User Instance=True");
+            String connectionString="server=lcw;database=StudentMannergerDB;integrated security=SSPI";
+            SqlConnection conn = new SqlConnection(connectionString);
             conn.Open();
 
             //(2)query string
@@ -60,7 +62,10 @@ namespace ID_CARD
         {
             String x ="";
 
-            SqlConnection conn = new SqlConnection("Data Source=.\\SQLEXPRESS;AttachDbFilename=" + fullPath_class.fullPath + ";Integrated Security=True;Connect Timeout=30;User Instance=True");
+            String connectionString = "server=lcw;database=StudentMannergerDB;integrated security=SSPI";
+            SqlConnection conn;
+            conn = new SqlConnection(connectionString);
+            //    SqlConnection conn = new SqlConnection("Data Source=(local);AttachDbFilename=" + fullPath_class.fullPath + ";Integrated Security=True;Connect Timeout=30;User Instance=True");
             conn.Open();
             
             //(2)query string
@@ -108,7 +113,11 @@ namespace ID_CARD
                 else
                     x = dr["school_leaving_date"].ToString();
 
-                MessageBox.Show("Admission Number = " + dr["admission_number"] + "\n" + "Admission Date = " + dr["admission_date"] + "\n" + "Name = " + dr["name"] + "\n" + "Father's Name = " + dr["father_name"] + "\n" + "Mother's Name = " + dr["mother_name"] + "\n" + "Address = " + dr["address"] + "\n" + "Class and Section = " + dr["class_sec"] + "\n" + "DOB = " + dr["dob"] + "\n" + "Blood Group = " + dr["blood_group"] + "\n" + "Father's Phone Number = " + dr["father_num"] + "\n" + "Mother's Phone Number = " + dr["mother_num"] + "\n" + "Current Status = " + dr["current_status"] + "\n" + "Leaving Date = " + x);
+                MessageBox.Show("Admission Number = " + dr["admission_number"] + "\n" + "Admission Date = " + dr["admission_date"] + "\n" + "Name = " + dr["name"] + "\n"
+                    + "Father's Name = " + dr["father_name"] + "\n" + "Mother's Name = " + dr["mother_name"] + "\n" + "Address = " + dr["address"] + "\n"
+                    + "Class and Section = " + dr["class_sec"] + "\n" + "DOB = " + dr["dob"] + "\n" + "Blood Group = " + dr["blood_group"] + "\n" 
+                    + "Father's Phone Number = " + dr["father_num"] + "\n" + "Mother's Phone Number = " + dr["mother_num"] + "\n" + "Current Status = "
+                    + dr["current_status"] + "\n" + "Leaving Date = " + x);
 
 
                 

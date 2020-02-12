@@ -35,9 +35,9 @@
             // 
             this.button1.BackColor = System.Drawing.Color.Transparent;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(160, 119);
+            this.button1.Location = new System.Drawing.Point(226, 163);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(118, 45);
+            this.button1.Size = new System.Drawing.Size(141, 61);
             this.button1.TabIndex = 0;
             this.button1.Text = "Select a Database";
             this.button1.UseVisualStyleBackColor = false;
@@ -45,11 +45,12 @@
             // 
             // Welcome
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BackgroundImage = global::ID_CARD.Properties.Resources.welcome;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(447, 272);
+            this.ClientSize = new System.Drawing.Size(600, 400);
             this.Controls.Add(this.button1);
             this.Name = "Welcome";
             this.Text = "Welcome";

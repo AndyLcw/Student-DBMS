@@ -73,6 +73,11 @@
     <Compile Include="Leaving School Procedure.Designer.cs">
       <DependentUpon>Leaving School Procedure.cs</DependentUpon>
     </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Student DBMS.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,14 +121,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="Remove Student .resx">
       <DependentUpon>Remove Student .cs</DependentUpon>
     </EmbeddedResource>
@@ -150,46 +150,17 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\idcard-template-f-scm-22-webbience.jpg" />
+    <None Include="Resources\back.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\temp_Form2.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Review_DB.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\add_db.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\remove_db.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\remove_db1.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\update_db.jpeg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\first_screen.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ID_background.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\instagram.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\product.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\banner.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\bg.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\vector-business-cards-set5-12-by-dragonart.jpg" />
+    <Content Include="Resources\art.jpg" />
+    <Content Include="Resources\caochang.jpg" />
+    <Content Include="Resources\dlpu.jpg" />
+    <Content Include="Resources\leave.jpg" />
+    <Content Include="Resources\remove.jpg" />
+    <Content Include="Resources\search.jpg" />
+    <Content Include="Resources\welcome.jpg" />
+    <Content Include="Resources\zonghe.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
